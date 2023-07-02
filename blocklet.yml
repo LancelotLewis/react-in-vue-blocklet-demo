@@ -1,0 +1,63 @@
+name: react-in-vue-blocklet
+version: 0.1.0
+main: dist
+author:
+  name: ArcBlock
+license: ''
+title: React in Vue Blocklet
+description: A demo shows that use react component in vue, support blocklet auth & locale
+group: static
+specVersion: 1.2.8
+logo: logo.png
+files:
+  - blocklet.md
+  - README.md
+  - dist
+keywords:
+  - dapp
+  - demo
+  - vite
+  - react
+  - vue
+  - blocklet
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+did: z8iZqopamJ2d6ndy5Pe8VRAjXehsbfve7mAUu
+community: ''
+documentation: ''
+homepage: ''
+timeout:
+  start: 60
+requirements:
+  server: '>=1.16.0'
+  os: '*'
+  cpu: '*'
+environments:
+  - name: CHAIN_HOST
+    description: What's endpoint of the chain?
+    required: false
+    default: https://beta.abtnetwork.io/api/
+    secure: false
+    shared: true
+  - name: CHAIN_ID
+    description: What's chain id of the chain?
+    required: false
+    default: beta
+    secure: false
+    shared: true
+scripts:
+  dev: npm run start
+screenshots: []
+payment:
+  price: []
+  share: []
+capabilities:
+  clusterMode: false
+  component: true
+  navigation: true
+components: []
